@@ -1,0 +1,19 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+# Memanggil index.html
+- url: /
+  static_files: index.html
+  upload: index.html
+
+# Serve php scripts.
+- url: /
+  static_files: proccess.php
+  upload: proccess.php
+
+# Memanggil css.
+- url: /css
+  static_files: /css/css.style
+  upload: css.style
